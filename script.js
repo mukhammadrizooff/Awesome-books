@@ -47,7 +47,12 @@ const booksAdd = (e) => {
   form.reset();
 };
 
-
+const removeElement = (e) => {
+  const btnInfo = e.target.id;
+  books = books.filter((y) => y !== books[books.findIndex((x) => x.id === parseInt(btnInfo, 10))]);
+  localStorage.setItem('ListBooks', JSON.stringify(books));
+  elementList.innerHTML = `${books.map(listBooks).join('')}`;
+};
 
 window.addEventListener('DOMContentLoaded', localStorageProgres);
 submit.addEventListener('submit', booksAdd);
