@@ -22,7 +22,7 @@ AWESOME BOOKS is a basic website that allows users to add/remove books from a li
 
 ## Live Demo
 
-[Live Demo Link](***************************)
+[Live Demo Link](https://mukhammadrizooff.github.io/Awesome-books/)
 
 
 ## Getting Started
@@ -61,7 +61,7 @@ In order to install a local version of this project and please do the following 
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/mukhammadrizooff/Awesome-books/issues).
 
 ## Show your support
 
