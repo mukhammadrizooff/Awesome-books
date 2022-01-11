@@ -5,13 +5,6 @@ const form = document.querySelector('.formContainer');
 const elementList = document.getElementById('listBooks');
 const submit = document.getElementById('formId');
 
-const removeElement = (e) => {
-  const btnInfo = e.target.id;
-  books = books.filter((y) => y !== books[books.findIndex((x) => x.id === parseInt(btnInfo, 10))]);
-  localStorage.setItem('ListBooks', JSON.stringify(books));
-  elementList.innerHTML = `${books.map(listBooks).join('')}`;
-};
-
 const listBooks = (books) => `
     <li>${books.title}</li>
     <li>${books.author}</li>
@@ -37,6 +30,13 @@ const localStorageProgres = () => {
   });
 };
 
+const removeElement = (e) => {
+  const btnInfo = e.target.id;
+  books = books.filter((y) => y !== books[books.findIndex((x) => x.id === parseInt(btnInfo, 10))]);
+  localStorage.setItem('ListBooks', JSON.stringify(books));
+  elementList.innerHTML = `${books.map(listBooks).join('')}`;
+};
+
 const booksAdd = (e) => {
   e.preventDefault();
   i += 1;
@@ -55,8 +55,6 @@ const booksAdd = (e) => {
   });
   form.reset();
 };
-
-
 
 window.addEventListener('DOMContentLoaded', localStorageProgres);
 submit.addEventListener('submit', booksAdd);
