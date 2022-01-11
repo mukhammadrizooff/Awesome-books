@@ -12,24 +12,6 @@ const listBooks = (books) => `
     <br /><br />
     <hr />`;
 
-const localStorageProgres = () => {
-  const infoData = localStorage.getItem('ListBooks');
-  const data = JSON.parse(infoData);
-
-  if (data) {
-    books = data;
-    if (books.length > 0) {
-      i = books[books.length - 1].id;
-    }
-  }
-  elementList.innerHTML = `${books.map(listBooks).join('')}`;
-  elementList.addEventListener('click', (e) => {
-    if (e.target.classList.contains('remove-btn')) {
-      removeElement(e);
-    }
-  });
-};
-
 const removeElement = (e) => {
   const btnInfo = e.target.id;
   books = books.filter((y) => y !== books[books.findIndex((x) => x.id === parseInt(btnInfo, 10))]);
@@ -54,6 +36,24 @@ const booksAdd = (e) => {
     }
   });
   form.reset();
+};
+
+const localStorageProgres = () => {
+  const infoData = localStorage.getItem('ListBooks');
+  const data = JSON.parse(infoData);
+
+  if (data) {
+    books = data;
+    if (books.length > 0) {
+      i = books[books.length - 1].id;
+    }
+  }
+  elementList.innerHTML = `${books.map(listBooks).join('')}`;
+  elementList.addEventListener('click', (e) => {
+    if (e.target.classList.contains('remove-btn')) {
+      removeElement(e);
+    }
+  });
 };
 
 window.addEventListener('DOMContentLoaded', localStorageProgres);
