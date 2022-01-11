@@ -34,4 +34,17 @@ class displayBook {
 
   }
 
-  
+  static deleteBook(el) {
+      if (el.classList.contains('remove-btn')) {
+          el.parentElement.remove();
+      }
+  }
+
+
+
+  static clearFields() {
+      document.querySelector('#title').value = '';
+      document.querySelector('#author').value = '';
+
+  }
+}
