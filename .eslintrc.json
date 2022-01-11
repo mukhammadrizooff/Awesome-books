@@ -16,7 +16,11 @@
       "eol-last": "off",
       "import/extensions": [ 1, {
         "js": "always", "json": "always"
-      }]
+      }],
+      "max-classes-per-file": 0,
+      "no-use-before-define": "off",
+      "radix": "off",
+      "no-plusplus": "off"
     },
     "ignorePatterns": [
       "dist/",
