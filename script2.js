@@ -74,3 +74,30 @@ class Store {
            localStorage.setItem('books', JSON.stringify(books));
   }
 }
+
+// Event: Display Books
+document.addEventListener('DOMContentLoaded', displayBook.displayBooks);
+let increment = 0;
+// Event: Add a Book
+document.querySelector('#formId').addEventListener('submit', (e) => {
+  // Prevent actual submit
+  e.preventDefault();
+  // Get form values
+  const title = document.querySelector('#title').value;
+  const author = document.querySelector('#author').value;
+  const id = increment;
+  increment++;
+  // Validate
+  if (title === '' || author === '') {
+      alert('Please fill in all fields', 'danger');
+  } else {
+      // Instatiate book
+      const book = new Book(title, author, id);
+      // Add Book to displayBook
+      displayBook.addBookToList(book);
+      // Add book to store
+      Store.addBook(book);
+      // Clear fields
+      displayBook.clearFields();
+  }
+});
