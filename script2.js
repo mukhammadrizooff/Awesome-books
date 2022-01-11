@@ -101,3 +101,11 @@ document.querySelector('#formId').addEventListener('submit', (e) => {
       displayBook.clearFields();
   }
 });
+
+// Event: Remove a Book
+document.querySelector('#listBooks').addEventListener('click', (e) => {
+    // Remove book from displayBook
+    displayBook.deleteBook(e.target);
+    // Remove book from store
+    Store.removeBook(e.target);
+  });
