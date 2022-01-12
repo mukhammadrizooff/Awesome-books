@@ -84,7 +84,7 @@ document.querySelector('#formId').addEventListener('submit', (e) => {
 
   // Validate
   if (title === '' || author === '') {
-    alert('Please fill in all fields', 'danger');
+    alert('Please fill in all fields');
   } else {
     // Instatiate book
     const book = new Book(title, author, id);
