@@ -27,25 +27,31 @@
       <nav class="navigation-menu">
         <p class="menu-title">Awesome Books</p>
         <ul class="menu-list">
-          <li><a class="link" href="#" id="list">List</a></li>
+          <li class="li-p li-hover">
+            <a class="link" href="#" id="list">List</a>
+          </li>
           <li class="stake"></li>
-          <li><a class="link" href="#" id="addNew">Add new</a></li>
+          <li class="li-p li-hover">
+            <a class="link" href="#" id="addNew">Add new</a>
+          </li>
           <li class="stake"></li>
-          <li><a class="link" href="#" id="contact">Contact</a></li>
+          <li class="li-p li-hover">
+            <a class="link" href="#" id="contact">Contact</a>
+          </li>
         </ul>
       </nav>
 
       <div class="clock" id="currentTime"></div>
-      <div class="main-ul hidden">
+      <div class="main-ul">
         <div class="main-conatainer-ul" id="ulCont">
+          <h1 class="paragraph">All Awesome Books</h1>
           <div class="container-ul" id="conatainer-ul">
-            <h1 class="paragraph">All Awesome Books</h1>
             <ul class="list-books" id="listBooks"></ul>
           </div>
         </div>
       </div>
 
-      <div class="main-form">
+      <div class="main-form hidden">
         <div class="conatainer-form" id="addBookForm">
           <p class="paragraph">Add new Book</p>
           <form class="formContainer" id="formId">
@@ -54,6 +60,23 @@
             <br />
             <input id="submit" type="submit" value="Add" class="add-btn" />
           </form>
+        </div>
+      </div>
+
+      <div class="main-contact hidden">
+        <div class="contact-container">
+          <h1 class="contact-title">Contact information</h1>
+          <p class="contact-p">
+            Do you have any questions or you just want to say "Hello"? <br />
+            You can reach out to us!
+          </p>
+          <ul class="contact-list">
+            <li class="li-p">• Our e-mail: example@mail.com</li>
+            <li class="li-p">• Our phone number: 001122334455</li>
+            <li class="li-p">
+              • Our address: Streetname 22, Silicon valley, Country
+            </li>
+          </ul>
         </div>
       </div>
 

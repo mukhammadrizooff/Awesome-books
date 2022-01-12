@@ -15,8 +15,6 @@ body {
   display: none;
 }
 
-
-
 .main-conatainer {
   display: flex;
   flex-direction: column;
@@ -48,15 +46,24 @@ body {
 }
 
 .link:hover {
+  transform: scale(1.1);
   color: #001aff;
 }
 
 .stake {
+  font-size: 0;
+  display: flex;
+  gap: 0;
+  justify-content: space-between;
+  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
   border: #000 solid 0.1rem;
   background-color: #000;
   border-radius: 100% 49% 100% 3% / 100% 57% 97% 64%;
 }
 /* Menu finished */
+
 /* List book */
 .clock {
   align-self: flex-end;
@@ -66,6 +73,7 @@ body {
 
 .main-conatainer-ul {
   display: flex;
+  padding-top: 10rem;
   flex-direction: column;
   align-items: center;
 }
@@ -79,19 +87,21 @@ body {
 }
 
 .paragraph {
-  font-size: 4rem;
+  padding-bottom: 2rem;
+  font-size: 5rem;
   align-self: center;
 }
 
 #listBooks {
   list-style: none;
   display: flex;
+  width: 60rem;
   flex-direction: column;
   border: black solid 0.3rem;
   border-radius: 40% 26% 46% 47% / 1% 1% 1% 1%;
   box-shadow: 3px 2px 0.5px 0.5px #000;
 }
-
+/* --------------------------------BG-LI----------------------------------- */
 li {
   font-size: 2rem;
   display: flex;
@@ -105,6 +115,7 @@ li {
 li:nth-child(odd) {
   background-color: #ddd;
 }
+/* --------------------------------BG-LI----------------------------------- */
 
 .remove-btn {
   width: 5rem;
@@ -130,6 +141,7 @@ footer {
   align-items: center;
 }
 /* List Book finished */
+
 /* Form Elements */
 .conatainer-form {
   display: flex;
@@ -170,7 +182,76 @@ input {
 #submit:hover {
   transform: scale(1.1);
 }
+/* Form Section Finished*/
+
 /*Conatct sectiion*/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-title {
+  font-size: 4rem;
+}
+
+.contact-p {
+  font-size: 2rem;
+}
+.contact-list {
+  font-size: 2rem;
+}
+
+.li-p {
+  color: #000;
+  background-color: white;
+}
+
+.li-p:nth-child(odd) {
+  background-color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .container-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 12rem 0.1rem;
+    width: 80%;
+  }
+
+  .list-books {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border: black solid 0.3rem;
+    border-radius: 40% 26% 46% 47% / 1% 1% 1% 1%;
+    box-shadow: 3px 2px 0.5px 0.5px #000;
+  }
+
+  li {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .remove-btn {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    width: 10rem;
+  }
+}
 
 /* hr {
   width: 60%;
