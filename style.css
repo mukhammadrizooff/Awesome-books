@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
 * {
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-size: 62.5%;
 }
 
 .main-conatainer {
@@ -88,7 +84,7 @@ input {
 }
 
 ::placeholder {
-  font-family: 'Acme', cursive;
+  font-family: "Acme", cursive;
 }
 
 #submit {
