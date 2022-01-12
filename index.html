@@ -6,30 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Awesome books</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.2/luxon.js"
+      integrity="sha512-dnGGSoHcLej84Nu756Hffi8rrR2x8XHY/uv+X0MHr7Kz2LXG9WWvleK9pn2tDGzdz4KEnttgrcLiQUG35yv9eg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
     <script src="script.js" defer></script>
   </head>
+
   <body>
     <section class="main-conatainer">
-      <div class="conatainer-ul">
-        <h1 class="paragraph">Awesome books</h1>
-        <ul id="listBooks"></ul>
+      <nav class="navigation-menu">
+        <p class="menu-title">Awesome Books</p>
+        <ul class="menu-list">
+          <li><a class="link" href="#" id="list">List</a></li>
+          <li class="stake"></li>
+          <li><a class="link" href="#" id="addNew">Add new</a></li>
+          <li class="stake"></li>
+          <li><a class="link" href="#" id="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="clock" id="currentTime"></div>
+      <div class="main-ul hidden">
+        <div class="main-conatainer-ul" id="ulCont">
+          <div class="container-ul" id="conatainer-ul">
+            <h1 class="paragraph">All Awesome Books</h1>
+            <ul class="list-books" id="listBooks"></ul>
+          </div>
+        </div>
       </div>
 
-      <div class="conatainer-form">
-        <p class="paragraph">Add new Book</p>
-        <hr>
-        <form class="formContainer" id="formId">
+      <div class="main-form">
+        <div class="conatainer-form" id="addBookForm">
+          <p class="paragraph">Add new Book</p>
+          <form class="formContainer" id="formId">
             <input type="text" placeholder="Title" required id="title" /> <br />
-            <input type="text" placeholder="Author" required id="author" /> <br />
-            <input id="submit" type="submit" value="Add" class="add-btn" />  
-        </form>
+            <input type="text" placeholder="Author" required id="author" />
+            <br />
+            <input id="submit" type="submit" value="Add" class="add-btn" />
+          </form>
+        </div>
       </div>
+
+      <footer>Copyright ...</footer>
     </section>
-    <footer>
-      Copyright  ...
-    </footer>
   </body>
 </html>

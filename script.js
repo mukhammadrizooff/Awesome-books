@@ -21,9 +21,7 @@ class displayBook {
     listItem.innerHTML = `
     <span>"${book.title}" by ${book.author}</span>
     <button type='button' id='${book.id}' class='remove-btn'>Remove</button>
-    
-    <!-- <br /><br />
-    <hr /> -->`;
+    `;
 
     elementList.appendChild(listItem);
   }
@@ -108,3 +106,13 @@ document.querySelector('#listBooks').addEventListener('click', (e) => {
   // Remove book from store
   Store.removeBook(e.target);
 });
+
+const colBook = new BookCollection();
+colBook.listBooks(colBook.collection);
+
+const Time = () => {
+  const luxonTime = luxon.DateTime.now();
+  currentTime.innerHTML = luxonTime.toLocaleString(luxon.DateTime.DATETIME_MED);
+};
+
+const myTime = setInterval(Time, 1000);

@@ -7,22 +7,80 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 62.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
 .main-conatainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+  cursor: default;
+}
+/* Navigation Menu */
+.navigation-menu {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  padding: 0.01rem 1rem;
+  border: black solid 0.3rem;
+  border-radius: 40% 26% 46% 47% / 1% 1% 1% 1%;
+  box-shadow: 3px 2px 0.5px 0.5px #000;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #001aff;
+}
+
+.stake {
+  border: #000 solid 0.1rem;
+  background-color: #000;
+  border-radius: 100% 49% 100% 3% / 100% 57% 97% 64%;
+}
+/* Menu finished */
+/* List book */
+.clock {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.main-conatainer-ul {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container-ul {
+.conatainer-ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: center;
   padding: 4rem;
+  width: 80%;
 }
 
 .paragraph {
   font-size: 4rem;
+  align-self: center;
 }
 
 #listBooks {
@@ -60,12 +118,28 @@ li:nth-child(odd) {
   transform: scale(1.1);
 }
 
+footer {
+  margin-top: auto;
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+  padding: 0.01rem 1rem;
+  border: black solid 0.3rem;
+  border-radius: 40% 26% 46% 47% / 1% 1% 1% 1%;
+  box-shadow: 3px 2px 0.5px 0.5px #000;
+  align-items: center;
+}
+/* List Book finished */
+/* Form Elements */
 .conatainer-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
-  padding: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .formContainer {
@@ -89,15 +163,17 @@ input {
 
 #submit {
   width: 5rem;
-  margin-left: 25rem;
+  margin-left: auto;
   background: #fff;
 }
 
 #submit:hover {
   transform: scale(1.1);
 }
+/*Conatct sectiion*/
 
-hr {
+/* hr {
   width: 60%;
   border: 2px solid #000;
-}
+  background-color: #000;
+} */
