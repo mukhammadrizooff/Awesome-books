@@ -100,3 +100,8 @@ input {
 #submit:hover {
   transform: scale(1.1);
 }
+
+hr {
+  width: 60%;
+  border: 2px solid #000;
+}
