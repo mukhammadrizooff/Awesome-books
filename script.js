@@ -19,8 +19,7 @@ class displayBook {
     const listItem = document.createElement('li');
 
     listItem.innerHTML = `
-    <span>${book.title}</span><br>
-    <span>${book.author}</span><br>
+    <span>"${book.title}" by ${book.author}</span>
     <button type='button' id='${book.id}' class='remove-btn'>Remove</button>
     <br /><br />
     <hr />`;
