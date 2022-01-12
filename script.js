@@ -19,10 +19,11 @@ class displayBook {
     const listItem = document.createElement('li');
 
     listItem.innerHTML = `
+    <li class='values'>
     <span>"${book.title}" by ${book.author}</span>
     <button type='button' id='${book.id}' class='remove-btn'>Remove</button>
-    <br /><br />
-    <hr />`;
+    <!-- <br /><br />
+    <hr /> -->`;
 
     elementList.appendChild(listItem);
   }
