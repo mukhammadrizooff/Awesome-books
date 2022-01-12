@@ -216,7 +216,6 @@ input {
   background-color: white;
 }
 
-
 @media only screen and (max-width: 768px) {
   html {
     font-size: 43.75%;
@@ -230,9 +229,10 @@ input {
     width: 80%;
   }
 
-  .list-books {
+  #listBooks {
     list-style: none;
     display: flex;
+    width: 40rem;
     flex-direction: column;
     border: black solid 0.3rem;
     border-radius: 40% 26% 46% 47% / 1% 1% 1% 1%;
