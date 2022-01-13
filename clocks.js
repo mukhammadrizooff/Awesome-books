@@ -1,4 +1,4 @@
-function display_clock() {
+function displayClock() {
   const time = new Date();
 
   let dayPeriod = '';
@@ -18,13 +18,13 @@ function display_clock() {
   function dateWithSuffix(date) {
     const num1 = date % 10;
     const num2 = date % 100;
-    if (num1 == date && num2 != 11) {
+    if (num1 === date && num2 !== 11) {
       return `${date}st`;
     }
-    if (num1 == 2 && num2 != 12) {
+    if (num1 === 2 && num2 !== 12) {
       return `${date}nd`;
     }
-    if (num1 == 3 && num2 != 13) {
+    if (num1 === 3 && num2 !== 13) {
       return `${date}rd`;
     }
     return `${date}th`;
@@ -35,9 +35,10 @@ function display_clock() {
 
   month = monthOfYear[month];
 
-  const clock = `${month} ${date} ${time.getFullYear()},` + ` ${hours}:${time.getMinutes()}:${time.getSeconds()} ${dayPeriod}`;
+  let clock = `${month} ${date} ${time.getFullYear()},`;
+  clock += ` ${hours}:${time.getMinutes()}:${time.getSeconds()} ${dayPeriod}`;
   document.querySelector('.clock').innerHTML = clock;
 }
-display_clock();
+displayClock();
 
-setInterval(display_clock, 1000);
+setInterval(displayClock, 1000);
