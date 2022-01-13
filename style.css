@@ -22,6 +22,7 @@ body {
   padding: 1rem;
   cursor: default;
 }
+
 /* Navigation Menu */
 .navigation-menu {
   display: flex;
@@ -62,6 +63,7 @@ body {
   background-color: #000;
   border-radius: 100% 49% 100% 3% / 100% 57% 97% 64%;
 }
+
 /* Menu finished */
 
 /* List book */
@@ -101,6 +103,7 @@ body {
   border-radius: 40% 26% 46% 47% / 1% 1% 1% 1%;
   box-shadow: 3px 2px 0.5px 0.5px #000;
 }
+
 /* --------------------------------BG-LI----------------------------------- */
 li {
   font-size: 2rem;
@@ -115,6 +118,7 @@ li {
 li:nth-child(odd) {
   background-color: #ddd;
 }
+
 /* --------------------------------BG-LI----------------------------------- */
 
 .remove-btn {
@@ -140,6 +144,7 @@ footer {
   box-shadow: 3px 2px 0.5px 0.5px #000;
   align-items: center;
 }
+
 /* List Book finished */
 
 /* Form Elements */
@@ -182,9 +187,10 @@ input {
 #submit:hover {
   transform: scale(1.1);
 }
-/* Form Section Finished*/
 
-/*Conatct sectiion*/
+/* Form Section Finished */
+
+/* Conatct sectiion */
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -203,6 +209,7 @@ input {
 .contact-p {
   font-size: 2rem;
 }
+
 .contact-list {
   font-size: 2rem;
 }
