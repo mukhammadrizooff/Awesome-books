@@ -6,27 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Awesome books</title>
+  
     <script src="script.js" defer></script>
   </head>
+
   <body>
     <section class="main-conatainer">
-      <div class="conatainer-ul">
-        <h1 class="paragraph">Awesome books</h1>
-        <ul id="listBooks"></ul>
+      <nav class="navigation-menu">
+        <p class="menu-title">Awesome Books</p>
+        <ul class="menu-list">
+          <li class="li-p li-hover">
+            <a class="link" href="#" id="list">List</a>
+          </li>
+          <li class="stake"></li>
+          <li class="li-p li-hover">
+            <a class="link" href="#" id="addNew">Add new</a>
+          </li>
+          <li class="stake"></li>
+          <li class="li-p li-hover">
+            <a class="link" href="#" id="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="clock" id="currentTime"></div>
+      <div id="bookSection" class="main-ul">
+        <div class="main-conatainer-ul" id="ulCont">
+          <h1 class="paragraph">All Awesome Books</h1>
+          <div class="container-ul" id="conatainer-ul">
+            <ul class="list-books" id="listBooks"></ul>
+          </div>
+        </div>
       </div>
 
-      <div class="conatainer-form">
-        <p class="paragraph">Add new Book</p>
-        <hr>
-        <form class="formContainer" id="formId">
+      <div id="formSection" class="main-form hidden">
+        <div class="conatainer-form" id="addBookForm">
+          <p class="paragraph">Add new Book</p>
+          <form class="formContainer" id="formId">
             <input type="text" placeholder="Title" required id="title" /> <br />
-            <input type="text" placeholder="Author" required id="author" /> <br />
-            <input id="submit" type="submit" value="Add" class="add-btn" />  
-        </form>
+            <input type="text" placeholder="Author" required id="author" />
+            <br />
+            <input id="submit" type="submit" value="Add" class="add-btn" />
+          </form>
+        </div>
       </div>
+
+      <div id="contactSection" class="main-contact hidden">
+        <div class="contact-container">
+          <h1 class="contact-title">Contact information</h1>
+          <p class="contact-p">
+            Do you have any questions or you just want to say "Hello"? <br />
+            You can reach out to us!
+          </p>
+          <ul class="contact-list">
+            <li class="li-p">• Our e-mail: example@mail.com</li>
+            <li class="li-p">• Our phone number: 001122334455</li>
+            <li class="li-p">
+              • Our address: Streetname 22, Silicon valley, Country
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>Copyright ...</footer>
     </section>
+    <script src="clocks.js"></script>
+    <script src="navigation.js"></script>
   </body>
 </html>

@@ -21,9 +21,7 @@ class displayBook {
     listItem.innerHTML = `
     <span>"${book.title}" by ${book.author}</span>
     <button type='button' id='${book.id}' class='remove-btn'>Remove</button>
-    
-    <!-- <br /><br />
-    <hr /> -->`;
+    `;
 
     elementList.appendChild(listItem);
   }
