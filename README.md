@@ -12,13 +12,12 @@ AWESOME BOOKS is a basic website that allows users to add/remove books from a li
 
 ## Screenshot
 
-![Desktop screenshot](/images/desktop_screenshot.png)
+![2022-01-13_06-01-42](https://user-images.githubusercontent.com/63915024/149247618-0d491557-db36-4f40-af49-a87efea0c525.png)
 
 ## Built With
 
 - HTML, CSS, JavaScript, GIT,
-- - Technologies used: GitHub, VScode, Windows 11 .
-- 
+- Technologies used: GitHub, VScode, Windows 11 .
 
 ## Live Demo
 
