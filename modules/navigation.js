@@ -1,3 +1,4 @@
+export default function navigation(){
 const nav1 = document.querySelector('#list');
 const nav2 = document.querySelector('#addNew');
 const nav3 = document.querySelector('#contact');
@@ -45,3 +46,5 @@ nav3.addEventListener('click', () => {
     formDisplaySection.classList.add('hidden');
   }
 });
+
+}
