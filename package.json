@@ -1,8 +1,9 @@
 {
   "name": "awesome-books",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
