@@ -1,23 +1,23 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 
-# Awesome books: plain JavaScript with objects
+# Awesome books: version with modules
 ## Learning objectives
-- Understand different ways to create objects in JavaScript.
-= Create and access properties and methods of JavaScript objects.
-
+- Use ES6 modules to write modular JavaScript.
+- Learn how to use proper ES6 syntax.
+- Understand improvements that ES6 brings to JavaScript.
+- Use npm as software packages system.
   #  AWESOME BOOKS
-
-AWESOME BOOKS is a basic website that allows users to add/remove books from a list. This is achieved that by using JavaScript objects and arrays. Y
-
+AWESOME BOOKS is a basic website that allows users to add/remove books from a list. 
 ## Screenshot
 
 ![2022-01-13_06-01-42](https://user-images.githubusercontent.com/63915024/149247618-0d491557-db36-4f40-af49-a87efea0c525.png)
 
+
 ## Built With
 
 - HTML, CSS, JavaScript, GIT,
-- Technologies used: GitHub, VScode, Windows 11 .
+- Technologies used: GitHub, VScode, Windows 10, nodejs, luxon
 
 ## Live Demo
 
@@ -50,9 +50,9 @@ In order to install a local version of this project and please do the following 
 
 
 ## Author
-👤 **Muhammad Rizo Abdunazarov**
 
-👤 **David Lafontant**
+
+👤 **Muhammad Rizo Abdunazarov**
 
 
 
@@ -61,6 +61,10 @@ In order to install a local version of this project and please do the following 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/mukhammadrizooff/Awesome-books/issues).
+
+## Notice
+
+This version derive from my previous shared work in module 2 block 1 with 👤 **David Lafontant**
 
 ## Show your support
 
