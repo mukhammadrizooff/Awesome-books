@@ -2,8 +2,15 @@ import Book from './modules/book.js';
 import navigation from './modules/navigation.js';
 import Store from './modules/store.js';
 import displayBook from './modules/display.js';
+import { DateTime } from './luxon/src/luxon.js';
 
 navigation();
+
+// Display the clock
+setInterval(() => {
+  const time = DateTime.now();
+  document.querySelector('.clock').innerHTML = time.toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS).slice(0, -4);
+}, 1000);
 
 // Event: Display Books
 document.addEventListener('DOMContentLoaded', displayBook.displayBooks);
