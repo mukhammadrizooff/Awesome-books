@@ -23,6 +23,12 @@ AWESOME BOOKS is a basic website that allows users to add/remove books from a li
 
 [Live Demo Link](https://mukhammadrizooff.github.io/Awesome-books/)
 
+## Cloning a repository
+- On GitHub.com, navigate to the main page of the repository. Above the list of files, click Download icon and Code.
+- Copy for git clone
+- Type git clone, and then paste the URL you copied earlier.
+`$ git clone https://github.com/mukhammadrizooff/Awesome-books.git`
+- Finally press Enter
 
 ## Getting Started
 
