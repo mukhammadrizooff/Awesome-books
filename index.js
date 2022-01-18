@@ -1,6 +1,6 @@
 import Book from './modules/book.js';
 import navigation from './modules/navigation.js';
-// import Store from './modules/store.js';
+import Store from './modules/store.js';
 import displayBook from './modules/display.js';
 
 navigation();
@@ -47,4 +47,3 @@ document.querySelector('#listBooks').addEventListener('click', (e) => {
   // Remove book from store
   Store.removeBook(e.target);
 });
- 
